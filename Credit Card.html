@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://127.0.0.1:5500/dma-task-credit%20card/credit.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="./Credit Card_files/credit.css">
+</head>
+
+<body>
+    <div class="cards-container">
+        <div class="card purple">
+            <img style="width: 50px; height: auto;" src="./Credit Card_files/sim-card-chip.png" alt="card-chip">
+            <h2 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">4500 6812 5512 6089</h2>
+            <h3 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">ALEKSEEV IVAN</h3>
+            <div class="card-bottom">
+                <div>
+                    <p style="color: white;">Valid thru:</p>
+                    <p style="color: white;">07/22</p>
+                </div>
+                <img src="./Credit Card_files/visa.png" style="width: 130px;">
+            </div>
+        </div>
+
+        <div class="card green">
+            <img style="width: 50px; height: auto;" src="./Credit Card_files/sim-card-chip.png" alt="card-chip">
+            <h2 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">4500 6812 5512 6089</h2>
+            <h3 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">ALEKSEEV IVAN</h3>
+            <div class="card-bottom">
+                <div>
+                    <p style="color: white;">Valid thru:</p>
+                    <p style="color: white;">07/22</p>
+                </div>
+                <img src="./Credit Card_files/visa.png" style="width: 130px;">
+            </div>
+        </div>
+
+        <div class="card blue">
+            <img style="width: 50px; height: auto;" src="./Credit Card_files/sim-card-chip.png" alt="card-chip">
+            <h2 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">4500 6812 5512 6089</h2>
+            <h3 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">ALEKSEEV IVAN</h3>
+            <div class="card-bottom">
+                <div>
+                    <p style="color: white;">Valid thru:</p>
+                    <p style="color: white;">07/22</p>
+                </div>
+                <img src="./Credit Card_files/visa.png" style="width: 130px;">
+            </div>
+        </div>
+
+        <div class="card black">
+            <img style="width: 50px; height: auto;" src="./Credit Card_files/sim-card-chip.png" alt="card-chip">
+            <h2 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">4500 6812 5512 6089</h2>
+            <h3 style="font-family: &#39;Courier New&#39;, Courier, monospace; color: white;">ALEKSEEV IVAN</h3>
+            <div class="card-bottom">
+                <div>
+                    <p style="color: white;">Valid thru:</p>
+                    <p style="color: white;">07/22</p>
+                </div>
+                <img src="./Credit Card_files/visa.png" style="width: 130px;">
+            </div>
+        </div>
+    </div>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
