@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/arr.html -->
+<html lang="az"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Kripto Cədvəl</title>
+    <link rel="stylesheet" href="./Kripto Cədvəl_files/arr.css">
+</head>
+<body>
+    <div id="table-container"><table><thead><tr><th>Ad</th><th>Ticker</th><th>Dəyər</th><th>Dəyişiklik</th></tr></thead><tbody><tr>
+                    <td>Bitcoin</td>
+                    <td>BTC</td>
+                    <td>9685</td>
+                    <td>2.83%</td>
+                </tr><tr>
+                    <td>Ethereum</td>
+                    <td>ETH</td>
+                    <td>210.5</td>
+                    <td>6.17%</td>
+                </tr><tr>
+                    <td>Ripple</td>
+                    <td>XRP</td>
+                    <td>0.2812</td>
+                    <td>2.47%</td>
+                </tr><tr>
+                    <td>Bitcoin Cash</td>
+                    <td>BCH</td>
+                    <td>441.4</td>
+                    <td>5.01%</td>
+                </tr><tr>
+                    <td>Bitcoin SV</td>
+                    <td>BSV</td>
+                    <td>303.17</td>
+                    <td>5.53%</td>
+                </tr><tr>
+                    <td>Litecoin</td>
+                    <td>LTC</td>
+                    <td>74.935</td>
+                    <td>4.25%</td>
+                </tr><tr>
+                    <td>Tether</td>
+                    <td>USDT</td>
+                    <td>0.9994</td>
+                    <td>-1.7%</td>
+                </tr><tr>
+                    <td>EOS</td>
+                    <td>EOS</td>
+                    <td>4.6161</td>
+                    <td>3.15%</td>
+                </tr><tr>
+                    <td>Binance Coin</td>
+                    <td>BNB</td>
+                    <td>19.824</td>
+                    <td>-3.82%</td>
+                </tr><tr>
+                    <td>Cardano</td>
+                    <td>ADA</td>
+                    <td>0.060389</td>
+                    <td>2.93%</td>
+                </tr><tr>
+                    <td>Tezos</td>
+                    <td>XTZ</td>
+                    <td>2.1247</td>
+                    <td>6.12%</td>
+                </tr><tr>
+                    <td>Ethereum Classic</td>
+                    <td>ETC</td>
+                    <td>12.5988</td>
+                    <td>4.09%</td>
+                </tr><tr>
+                    <td>Stellar</td>
+                    <td>XLM</td>
+                    <td>0.07034</td>
+                    <td>-4.10%</td>
+                </tr><tr>
+                    <td>Monero</td>
+                    <td>XMR</td>
+                    <td>79.523</td>
+                    <td>3.45%</td>
+                </tr><tr>
+                    <td>TRON</td>
+                    <td>TRX</td>
+                    <td>0.020881</td>
+                    <td>5.21%</td>
+                </tr></tbody></table></div>
+    <script src="./Kripto Cədvəl_files/arr.js.download"></script>
+    <script>
+        // JS-də cədvəli yaratmaq
+        function createTable(data) {
+            let html = '<table><thead><tr>';
+            html += '<th>Ad</th><th>Ticker</th><th>Dəyər</th><th>Dəyişiklik</th>';
+            html += '</tr></thead><tbody>';
+            data.forEach(item => {
+                html += `<tr>
+                    <td>${item.name}</td>
+                    <td>${item.ticker}</td>
+                    <td>${item.value}</td>
+                    <td>${item.change}</td>
+                </tr>`;
+            });
+            html += '</tbody></table>';
+            return html;
+        }
+        document.getElementById('table-container').innerHTML = createTable(data);
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
